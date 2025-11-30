@@ -220,7 +220,7 @@ body {
     max-width: 90% !important;
     margin: 0 auto;
     border-radius: 10px;
-    height: 108px;
+    height: 105px;
 }
 
 .navbar .nav-link {
@@ -245,6 +245,7 @@ body {
     justify-content: center !important;
     color: #c2ad96;
 }
+
 
 
 
