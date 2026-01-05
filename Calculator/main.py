@@ -4,6 +4,8 @@ from pyscript import display, document
 # Grades Form
 def gradesform(e):
     document.getElementById("output").innerHTML = ""  # clearing the output field
+    document.getElementById("output2").innerHTML = ""  # clearing the output field
+    document.getElementById("output3").innerHTML = ""  # clearing the output field
 
     # Read inputs first
     English = float(document.getElementById("English_score").value or 0)
@@ -49,4 +51,9 @@ def gradesform(e):
         target="output2"
     )
     
-    
+    #if statement for pass or fail
+
+    if round(total, 2) >= 75: #if statement
+        display(f'You passed!', target='output3')
+    else: # else statement
+        display(f'You failed.', target='output3')
